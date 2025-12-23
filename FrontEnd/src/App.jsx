@@ -42,7 +42,7 @@ function App() {
     getAllProductCart();
   }, [user, getAllProductCart]);
 
-  console.log("hello");
+  console.log(process.env.VITE_BACKEND_URL);
 
   if (checkUser)
     return (
