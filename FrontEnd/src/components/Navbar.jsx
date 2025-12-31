@@ -7,7 +7,6 @@ import clientContext from "../appContext/clientContext.js";
 import useUserStore from "../stores/useUserStore.js";
 import useProductStore from "../stores/useProductStore.js";
 import useCartStore from "../stores/useCartStore.js";
-import Modal from "./modal.jsx";
 
 const Navbar = () => {
   const { user, logout } = useUserStore();
