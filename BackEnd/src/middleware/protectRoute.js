@@ -1,6 +1,10 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
+import { config } from "dotenv";
+
+config();
+
 export const protectRoute = async (req, res, next) => {
   const myToken = req.cookies.myToken;
   if (!myToken) {

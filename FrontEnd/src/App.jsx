@@ -42,8 +42,6 @@ function App() {
     getAllProductCart();
   }, [user, getAllProductCart]);
 
-  console.log(process.env.VITE_BACKEND_URL);
-
   if (checkUser)
     return (
       <div className="min-h-screen flex flex-col items-center justify-center">
