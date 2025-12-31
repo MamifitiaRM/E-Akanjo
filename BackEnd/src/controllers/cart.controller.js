@@ -74,7 +74,7 @@ export const updateProductCart = async (req, res) => {
       await user.save();
       return res.json({ status: true, cart: user.cart });
     } else {
-      res.status(404).json({ message: "Product not found" });
+      res.json({ message: "Product not found" });
       return res.json({ status: false });
     }
   } catch (error) {
