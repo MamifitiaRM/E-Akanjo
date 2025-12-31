@@ -26,6 +26,10 @@ app.use("/api/auth", authRoute);
 app.use("/api/product", productRoute);
 app.use("/api/cart", cartRoute);
 
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
+
 connectDb();
 connectToCloudinary();
 
