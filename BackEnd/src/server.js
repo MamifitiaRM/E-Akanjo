@@ -12,7 +12,6 @@ import connectToCloudinary from "./db/cloudinary.js";
 
 config();
 const app = express();
-const PORT = process.env.PORT;
 
 app.use(express.json({ limit: "20mb" }));
 app.use(cookieParser());
@@ -27,8 +26,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/product", productRoute);
 app.use("/api/cart", cartRoute);
 
-app.listen(PORT, () => {
-  connectDb();
-  connectToCloudinary();
-  console.log("Le server est en marche sur http://localhost:" + PORT);
-});
+connectDb();
+connectToCloudinary();
+
+export default app;
