@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { clothesTypes } from "../utils/utility";
+import { useEffect, useState } from "react";
 // import { products } from "../../assets/frontend_assets/assets";
 import Card from "../components/Card";
 import useProductStore from "../stores/useProductStore";
